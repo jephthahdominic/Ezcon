@@ -73,7 +73,7 @@ export default function Navbar() {
         {/* Desktop CTA Button */}
         <Link
           href="/contact-us" 
-          className="hidden md:block bg-orange-900 hover:bg-orange-800 text-white text-xs px-4 py-1 rounded-full transition"
+          className="hidden md:block bg-orange-900 hover:bg-orange-800 text-white text-xs px-4 py-2 rounded-full transition"
         >
           Start Your Consultation
         </Link>
@@ -96,14 +96,14 @@ export default function Navbar() {
           <div className="px-6 py-4 space-y-4">
             <Link 
               href="/about-us" 
-              className="block text-gray-800 hover:text-orange-900 transition-colors"
+              className="font-sans block text-gray-800 hover:text-orange-900 transition-colors"
               onClick={() => setMobileMenu(false)}
             >
               About
             </Link>
             <Link 
               href="/contact-us" 
-              className="block text-gray-800 hover:text-orange-900 transition-colors"
+              className="font-sans block text-gray-800 hover:text-orange-900 transition-colors"
               onClick={() => setMobileMenu(false)}
             >
               Contact Us
@@ -113,7 +113,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="flex items-center justify-between w-full text-left text-gray-800 hover:text-orange-900 transition-colors focus:outline-none"
+                className="font-sans flex items-center justify-between w-full text-left text-gray-800 hover:text-orange-900 transition-colors focus:outline-none"
               >
                 Services
                 <svg 

@@ -39,15 +39,15 @@ export default function AboutUs() {
         <section className="bg-gray-50 py-16 px-8">
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-center">
             <div>
-              <div className="text-5xl md:text-6xl font-bold text-[#2c1c0f] mb-4">$50M+</div>
+              <div className="text-5xl md:text-5xl font-bold text-[#2c1c0f] mb-4">$50M+</div>
               <p className="text-[#8b4513] font-medium">Capital Growth</p>
             </div>
             <div>
-              <div className="text-5xl md:text-6xl font-bold text-[#2c1c0f] mb-4">13 Yrs</div>
+              <div className="text-5xl md:text-5xl font-bold text-[#2c1c0f] mb-4">13 Yrs</div>
               <p className="text-[#8b4513] font-medium">Of Experience</p>
             </div>
             <div>
-              <div className="text-5xl md:text-6xl font-bold text-[#2c1c0f] mb-4">120+</div>
+              <div className="text-5xl md:text-5xl font-bold text-[#2c1c0f] mb-4">120+</div>
               <p className="text-[#8b4513] font-medium">Startup Clients</p>
             </div>
           </div>
