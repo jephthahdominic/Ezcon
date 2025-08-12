@@ -36,7 +36,7 @@ export default function Navbar() {
           <li>
             <Link href="/contact-us" className="hover:underline">Contact Us</Link>
           </li>
-          <li className="relative">
+          <li className="relative group">
             <div
               onMouseEnter={() => setDropdown(true)}
               onMouseLeave={() => setDropdown(false)}
@@ -49,7 +49,8 @@ export default function Navbar() {
                 </svg>
               </button>
               {dropdown && (
-                <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg z-30">
+                <div 
+                 className="absolute left-0 mt-0 w-48 bg-white border border-gray-200 rounded shadow-lg z-30">
                   <ul className="py-1">
                     {services.map((service) => (
                       <li key={service.href}>

@@ -40,14 +40,15 @@ export default function InvestAfrica() {
 
         {/* Sector Cards */}
         <section className="max-w-6xl mx-auto px-8 pb-16">
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
+          <div className="flex flex-col gap-6">
+            <div className="flex w-[300px] h-[300px] items-center gap-2 aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
               <Image src="/oil.png" width={500} height={500} alt="oil sector" className="w-full h-full object-cover" />
+              <p></p>
             </div>
-            <div className="aspect-[4/3] bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
+            <div className="w-[300px] h-[300px] aspect-[4/3] bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
               <Image src="/banking.png" width={500} height={500} alt="finance" className="object-cover w-full h-full" />
             </div>
-            <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="w-[300px] h-[300px] aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
               <Image src="/cocoa.png" width={500} height={500} alt="Agriculture sector" className="w-full h-full object-cover" />
             </div>
           </div>

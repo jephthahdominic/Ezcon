@@ -1,0 +1,44 @@
+{
+    "services": [
+        {
+            "name": "i-Verify",
+            "description": "i-verify covers a wide range of checks including employment history, academic qualifications, personal documentation, criminal and civil records, financial solvency (including bankruptcy), and even digital relationship fraud (romance scam assessments). We combine local fieldwork with global data access to deliver accurate, timely, and discreet verification reports. Whether it's a cross-border business partner or a potential hire, we leave no stone unturned.",
+            "url": "/services/i-verify"
+        },
+        {
+            "name": "Invest Africa",
+            "description": "Operating a mini shop in Nairobi in Kenya, venturing into oil company in Nigeria and engaging in cocoa production in Ghana including divers opportunities in Africa. Our partnership with Governments and companies across Africa, Asia and South America, starting with facilitation of business registration, acquisition of permits and tax compliance. Providing assistance and supports ensuring your investment is growing profitably.",
+            "url": "/services/investAfrica"
+        },
+        {
+            "name": "Market Intelligence",
+            "description": "Are your customers complaining about sudden change of your services or some behaviours of your employees? Do you have hunch that your employees are selling your trades information to your competitors? Maybe you have noticed a drop in your profits or running at a loss, if any of the aforesaid listed is applicable then we have a conversation about these services brands protection, mystery shopping, competitive intelligence and market surveys. Our approach and findings are reliable, accurate and relative to the prevailing market trends of goods and services, focusses on qualitative and quantitative cutting across healthcare, agriculture, financial, information technology and construction.",
+            "url": "/services/marketintelligence"
+        },
+        {
+            "name": "Tour Africa",
+            "description": "From catching the sunrise in Tanzania, taking photos with dolphins, running with zebra and elephants in Kenya, or visit the sands in Cairo in Egypt, exploring the ancient museums, then flying to South Africa frozen at sight of wild tigers, lions and our of course our cousins monkeys to ending with castles and forts built by the Europeans trading for centuries at Cape Coast in Ghana. Tourafric gives you the package of flight booking, guided tour and hotel accommodation. This ensures safety and value for money.",
+            "url": "/services/tourAfrica"
+        },
+        {
+            "name": "WorknPay",
+            "description": "WorknPay covers the full employee lifecycle, from sourcing and screening to placement and compensation guidance. We manage job listings, coordinate interviews, and handle candidate shortlisting, ensuring each role is filled with the right fit. Our services also include onboarding support and compliance with local or international labor regulations. Whether you're staffing up for a short-term project or building a permanent team, we make sure your hiring process is efficient, strategic, and aligned with your business needs.",
+            "url": "/services/worknpay"
+        },
+        {
+            "name": "Training",
+            "description": "Corporate organizations and individuals are trained and equipped with various tools and knowledge to prevent, detect and prevent risk at workplace, the modules include legal principles and requirements, communication skills, sources of Information, locating people and performing background checks, evidence in court, competitive intelligence, fingerprinting and analysis, conducting various sources of information, interviewing and truth verifications and reporting.",
+            "url": "/services/training"
+        },
+        {
+            "name": "Cyber Security",
+            "description": "Corporate organizations and individuals are trained and equipped with various tools and knowledge to prevent, detect and prevent risk at workplace, the modules include legal principles and requirements, communication skills, sources of Information, locating people and performing background checks, evidence in court, competitive intelligence, fingerprinting and analysis, conducting various sources of information, interviewing and truth verifications and reporting.",
+            "url": "/services/cyberSecurity"
+        },
+        {
+            "name": "Health Overseas",
+            "description": "Corporate organizations and individuals are trained and equipped with various tools and knowledge to prevent, detect and prevent risk at workplace, the modules include legal principles and requirements, communication skills, sources of Information, locating people and performing background checks, evidence in court, competitive intelligence, fingerprinting and analysis, conducting various sources of information, interviewing and truth verifications and reporting.",
+            "url": "/services/healthOverseas"
+        }
+    ]
+}

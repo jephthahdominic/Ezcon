@@ -6,48 +6,7 @@ export default function Training() {
       <Navbar />
       <main className="font-sans bg-white text-[#2c1c0f]">
         {/* Hero Section */}
-        <section className="relative h-[400px] bg-gradient-to-br from-[#0a1929] via-[#1e293b] to-[#0f172a] overflow-hidden">
-          {/* Binary Code Background Pattern */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="text-cyan-400 text-xs font-mono leading-tight p-4 overflow-hidden">
-              {Array.from({ length: 50 }, (_, i) => (
-                <div key={i} className="whitespace-nowrap">
-                  {Array.from({ length: 120 }, () => Math.random() > 0.5 ? '1' : '0').join(' ')}
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Fingerprint/Spiral Pattern */}
-          <div className="absolute top-1/2 right-1/4 transform -translate-y-1/2">
-            <div className="w-48 h-48 relative">
-              <svg className="w-full h-full text-cyan-400" fill="none" stroke="currentColor" strokeWidth="1" viewBox="0 0 200 200">
-                <circle cx="100" cy="100" r="90" opacity="0.3"/>
-                <circle cx="100" cy="100" r="75" opacity="0.4"/>
-                <circle cx="100" cy="100" r="60" opacity="0.5"/>
-                <circle cx="100" cy="100" r="45" opacity="0.6"/>
-                <circle cx="100" cy="100" r="30" opacity="0.7"/>
-                <circle cx="100" cy="100" r="15" opacity="0.8"/>
-                <path d="M100 10 Q190 100 100 190 Q10 100 100 10" opacity="0.6"/>
-                <path d="M100 25 Q175 100 100 175 Q25 100 100 25" opacity="0.7"/>
-                <path d="M100 40 Q160 100 100 160 Q40 100 100 40" opacity="0.8"/>
-              </svg>
-            </div>
-          </div>
-          
-          {/* Digital Security Elements */}
-          <div className="absolute top-1/4 left-1/4 opacity-30">
-            <svg className="w-16 h-16 text-cyan-300" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-            </svg>
-          </div>
-          
-          <div className="absolute bottom-1/3 left-1/6 opacity-25">
-            <svg className="w-12 h-12 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/>
-            </svg>
-          </div>
-          
+        <section className="relative h-[400px] bg-gradient-to-br from-[#0a1929] via-[#1e293b] to-[#0f172a] bg-[url('/training.png')] overflow-hidden">          
           <div className="relative z-10 h-full flex items-center px-8 md:px-16">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Fraud Detection & Prevention</h1>
