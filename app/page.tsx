@@ -104,7 +104,7 @@ export default function Home() {
               <div className={`aspect-square bg-gradient-to-br from-[#f4a261]/20 to-[#f4a261]/40 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:shadow-lg transform ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
               } delay-800`}>
-                <img src="/img.png" alt="City view" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                <img src="/Img.png" alt="City view" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
               </div>
             </div>
           </div>
