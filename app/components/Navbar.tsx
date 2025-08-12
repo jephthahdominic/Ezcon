@@ -20,11 +20,11 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-white shadow-sm relative z-20">
-      <div className="flex justify-between items-center px-6 py-2">
+      <div className="flex justify-between items-center px-6 py-5">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <Link href="/">
-            <img src="/logo.png" alt="Ezcon Logo" className="h-6" />
+            <img src="/logo.png" width={50} height={50} alt="Ezcon Logo" className="h-6" />
           </Link>
         </div>
 
@@ -71,12 +71,12 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop CTA Button */}
-        <a 
-          href="#" 
+        <Link
+          href="/contact-us" 
           className="hidden md:block bg-orange-900 hover:bg-orange-800 text-white text-xs px-4 py-1 rounded-full transition"
         >
           Start Your Consultation
-        </a>
+        </Link>
 
         {/* Mobile Hamburger Button */}
         <button

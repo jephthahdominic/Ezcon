@@ -19,15 +19,18 @@ export default function AboutUs() {
         <section className="max-w-4xl mx-auto py-16 px-8">
           <div className="space-y-6 text-gray-700 leading-relaxed">
             <p className="text-base">
-              Founded in 2012 as Amoah Idea Consult, eZcon began with a focus on background checks, 
-              feasibility studies, and insurance verifications. After rebranding as Vekam Group Company Ltd in 
-              2017, the company expanded its client base across healthcare, legal, real estate, and government 
-              sectors. In 2021, it officially became eZcon Advisory Limited — a global-facing agency with a 
-              growing footprint across Africa, Asia, Europe, and South America.
+              Ezcon Advisory Limited, branded as “eZcon” has undergone different phases of restructure and branding since 
+              its formation in 2012. From a small beginning but progressively and by dint of hard work, the company is 
+              striving in West Africa with global network in East Africa, Central Africa, Asia, South America and Europe. 
+              We have never stopped innovating and changing per the dynamics of the trends and market demand. Our business clients, 
+              partners are our utmost treasured.
             </p>
             <p className="text-base">
-              Through constant innovation and market responsiveness, eZcon continues to evolve, empowering 
-              clients with trusted insight and cross-border access.
+              eZcon was registered as AMOAH IDEA CONSULT in the year 2012 and rebranded as the Watch Group Company Limited in 2017, 
+              activities then were corporate and individual background checks, feasibility studies, business intelligence, insurance claims and verifications.
+              Insurance companies, Third-Party Administrators, healthcare institutions, Group Medical, Real Estate Companies, 
+              Tertiary Institutions, legal firms and the Government  agencies were some of the business partners in the industry.
+              In 2021, we rebranded as eZcon advisory Limited (eZcon) with additional improved worldwide services.
             </p>
           </div>
         </section>
