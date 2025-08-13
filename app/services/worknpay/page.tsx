@@ -29,7 +29,7 @@ export default function WorkNPay() {
           <p className="text-gray-700 text-base leading-relaxed mb-8">
             WorknPay covers the full employee lifecycle, from sourcing and screening to placement and 
             compensation guidance. We manage job listings, coordinate interviews, and handle candidate 
-            shortlisting, ensuring each role is filled with the right fit. Our services also include onboarding 
+            shortlisting, ensuring each role is filled with the right fit. Our services also includes onboarding 
             support and compliance with local or international labor regulations. Whether you're staffing up for 
             a short-term project or building a permanent team, we make sure your hiring process is efficient, 
             strategic, and aligned with your business needs.
