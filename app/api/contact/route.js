@@ -31,7 +31,11 @@ export async function POST(req) {
   } catch (error) {
     console.error("Email send error:", error);
     return new Response(
-      JSON.stringify({ success: false, message: "Failed to send message" }),
+      JSON.stringify({ 
+        success: false, 
+        message: `Failed to send message: ${error.message}`,
+        error: process.env.NODE_ENV === 'development' ? error.stack : undefined
+      }),
       { status: 500 }
     );
   }
