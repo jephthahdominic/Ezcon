@@ -8,7 +8,7 @@ const services = [
   { name: "Market Intelligence", href: "/services/marketintelligence" },
   { name: "Tour Afric", href: "/services/tourAfric" },
   { name: "WorknPay", href: "/services/worknpay" },
-  { name: "Training", href: "/services/training" },
+  { name: "Fraud detection and protection", href: "/services/training" },
   { name: "Cyber Security", href: "/services/cyberSecurity" },
   { name: "Health Overseas", href: "/services/health-overseas" },
 ];

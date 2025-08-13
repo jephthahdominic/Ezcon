@@ -13,7 +13,7 @@ export default function Footer(){
               <div>
                 <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
                 <div className="space-y-1 text-sm">
-                  <p>Africa: +233 244 069784</p>
+                  <p>Africa: +233 244 098 784</p>
                   <p>Europe: +31 XXXXXXX</p>
                   <p>info@ezconadvisory.com</p>
                 </div>
