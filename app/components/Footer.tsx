@@ -21,7 +21,7 @@ export default function Footer(){
               <div>
                 <h4 className="font-semibold text-lg mb-4">Location</h4>
                 <div className="space-y-1 text-sm">
-                  <p>71 Kwame Nkrumah Avenue–Accra, Ghana</p>
+                  <p>71 Kwame Nkrumah Avenue-Accra, Ghana</p>
                   <p>243 Koepelplein Haarlem-Netherlands</p>
                 </div>
               </div>
