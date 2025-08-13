@@ -217,9 +217,9 @@ export default function Home() {
             <p className="text-xl mb-8 opacity-90">
               Comprehensive solutions for institutions, enterprises, and individuals seeking global opportunities.
             </p>
-            <button className="bg-white text-[#d4621a] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors">
+            <Link href="/contact-us" className="bg-white text-[#d4621a] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors">
               Contact Us
-            </button>
+            </Link>
           </div>
         </section>
 

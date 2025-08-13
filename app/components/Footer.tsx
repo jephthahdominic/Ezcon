@@ -6,7 +6,7 @@ export default function Footer(){
               <div>
                 <div className="font-bold text-xl mb-4">Ezcon</div>
                 <p className="text-sm mb-4 opacity-90">Your Global Gateway to Opportunities</p>
-                <a href="#" className="text-orange-200 hover:underline text-sm">
+                <a href="/about-us" className="text-orange-200 hover:underline text-sm">
                   More About Us →
                 </a>
               </div>

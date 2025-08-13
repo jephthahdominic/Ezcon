@@ -18,7 +18,7 @@
         {
             "name": "Tour Africa",
             "description": "From catching the sunrise in Tanzania, taking photos with dolphins, running with zebra and elephants in Kenya, or visit the sands in Cairo in Egypt, exploring the ancient museums, then flying to South Africa frozen at sight of wild tigers, lions and our of course our cousins monkeys to ending with castles and forts built by the Europeans trading for centuries at Cape Coast in Ghana. Tourafric gives you the package of flight booking, guided tour and hotel accommodation. This ensures safety and value for money.",
-            "url": "/services/tourAfrica"
+            "url": "/services/tourAfric"
         },
         {
             "name": "WorknPay",
@@ -38,7 +38,7 @@
         {
             "name": "Health Overseas",
             "description": "Corporate organizations and individuals are trained and equipped with various tools and knowledge to prevent, detect and prevent risk at workplace, the modules include legal principles and requirements, communication skills, sources of Information, locating people and performing background checks, evidence in court, competitive intelligence, fingerprinting and analysis, conducting various sources of information, interviewing and truth verifications and reporting.",
-            "url": "/services/healthOverseas"
+            "url": "/services/health-overseas"
         }
     ]
 }

@@ -10,17 +10,17 @@ export default function ContactUs() {
         {/* Hero Section */}
         <section className="relative h-[400px] bg-gradient-to-br from-[#8b4513] via-[#a0522d] to-[#8b4513] flex items-center">
           <div className="max-w-6xl mx-auto px-8 w-full">
-            <div className="flex md:flex-row flex-col justify-between md:items-center">
+            <div className="flex md:flex-row flex-col max-md:gap-4 justify-between md:items-center">
               <div>
-                <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Contact Us</h1>
-                <button className="bg-white text-[#8b4513] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors flex items-center gap-2">
+                <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">Contact Us</h1>
+                <button className="bg-white text-[#8b4513] font-normal px-8 py-3 rounded-full hover:bg-gray-100 transition-colors flex items-center gap-2">
                   Get In Touch
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
                   </svg>
                 </button>
               </div>
-              <div className="text-white text-right">
+              <div className="text-white text-left">
                 <h3 className="text-xl font-semibold mb-2">Business Hours</h3>
                 <p className="text-lg">Monday - Friday: 8:00am-5:00pm</p>
                 <p className="text-lg">Saturday & Sunday - Closed</p>
