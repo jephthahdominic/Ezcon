@@ -15,19 +15,19 @@ export const Form = () => {
         setStatus("Sending...");
 
         try {
-        const res = await fetch("/api/contact", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(form),
-        });
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(form),
+            });
 
-        const data = await res.json();
-        if (data.success) {
-            setStatus("Message sent successfully!");
-            setForm({ fullName: "", email: "", message: "" });
-        } else {
-            setStatus("Failed to send message.");
-        }
+            const data = await res.json();
+            if (data.success) {
+                setStatus("Message sent successfully!");
+                setForm({ fullName: "", email: "", message: "" });
+            } else {
+                setStatus("Failed to send message.");
+            }
         } catch (err) {
         setStatus("Error sending message.");
         }

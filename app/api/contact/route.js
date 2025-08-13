@@ -1,34 +1,31 @@
 import nodemailer from "nodemailer";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req) {
   try {
     const { fullName, email, message } = await req.json();
 
-    const transporter = nodemailer.createTransport({
-      service: "Gmail",
-      auth: {
-        user: process.env.BUSINESS_EMAIL, // Your business email
-        pass: process.env.EMAIL_PASSWORD, // App password (Gmail)
-      },
-    });
-
-    await transporter.sendMail({
-      from: email,
-      to: process.env.BUSINESS_EMAIL,
+    await resend.emails.send({
+      from: `${email}`,
+      to: "obidike0953@gmail.com",
       subject: `New message from ${fullName}`,
-      text: message,
       html: `
-        <p><strong>Name:</strong> ${fullName}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong><br/>${message}</p>
-      `,
-    });
-
+      <p><strong>Name:</strong> ${fullName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Message:</strong><br/>${message}</p>
+    `
+    })
     return new Response(
-      JSON.stringify({ success: true, message: "Message sent successfully" }),
+      JSON.stringify({ 
+        success: true, 
+        message: "Message sent successfully!"
+      }),
       { status: 200 }
     );
-  } catch (error) {
+
+  }catch (error) {
     console.error("Email send error:", error);
     return new Response(
       JSON.stringify({ 
@@ -39,4 +36,7 @@ export async function POST(req) {
       { status: 500 }
     );
   }
+    
+
+ 
 }
