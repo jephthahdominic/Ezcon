@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ezcon",
-  description: "Ezcon",
+  title: "eZcon Advisory Limited | Global Business Solutions & Strategic Consulting",
+  description: "eZcon Advisory Limited - A global business solutions provider with a worldwide network spanning multiple continents. Since 2012, we've been delivering innovative services including business intelligence, corporate investigations, and strategic consulting to international clients.",
 };
 
 export default function RootLayout({
@@ -26,8 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-      <title>eZcon Advisory Limited | Global Business Solutions & Strategic Consulting</title>
-        <meta name="description" content="eZcon Advisory Limited - A global business solutions provider with a worldwide network spanning multiple continents. Since 2012, we've been delivering innovative services including business intelligence, corporate investigations, and strategic consulting to international clients." />
         <meta name="keywords" content="global business advisory, corporate investigations, international business intelligence, strategic consulting, risk management, worldwide business solutions, corporate services" />
         <meta name="robots" content="index, follow" />
         
