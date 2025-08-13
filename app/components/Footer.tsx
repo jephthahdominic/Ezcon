@@ -49,7 +49,7 @@ export default function Footer(){
                 <div className="flex space-x-6 text-sm">
                   <a href="/" className="hover:underline">Home</a>
                   <a href="/about-us" className="hover:underline">About</a>
-                  <a href="/services" className="hover:underline">Services</a>
+                  <a href="/#services" className="hover:underline">Services</a>
                   <a href="/contact-us" className="hover:underline">Contact Us</a>
                 </div>
               </div>

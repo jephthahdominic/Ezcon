@@ -1,6 +1,97 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 import Navbar from "./components/Navbar";
+
+interface CounterCardProps {
+  value: number;
+  suffix?: string;
+  prefix?: string;
+  label: string;
+}
+
+const CounterCard = ({ value, suffix = "", prefix = "", label }: CounterCardProps) => {
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start({
+        scale: [0.8, 1.1, 1],
+        opacity: 1,
+        transition: { duration: 0.5 }
+      });
+    }
+  }, [isInView, controls]);
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={controls}
+      className="flex flex-col items-center"
+    >
+      <div className="text-5xl md:text-5xl font-bold mb-4">
+        {prefix}
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          {isInView && (
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <AnimatedNumber value={value} />
+            </motion.span>
+          )}
+        </motion.span>
+        {suffix}
+      </div>
+      <p className="opacity-90 font-medium">{label}</p>
+    </motion.div>
+  );
+};
+
+const AnimatedNumber = ({ value }: { value: number }) => {
+  const [displayValue, setDisplayValue] = useState(0);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const duration = 2;
+    const step = Math.ceil(value / (duration * 30)); // Adjust for smoothness
+    let current = 0;
+
+    const animate = () => {
+      current += step;
+      if (current >= value) {
+        setDisplayValue(value);
+        return;
+      }
+      setDisplayValue(current);
+      requestAnimationFrame(animate);
+    };
+
+    controls.start({
+      scale: [1, 1.1, 1],
+      transition: { duration: 0.5 }
+    });
+
+    const timer = setTimeout(() => {
+      animate();
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [value, controls]);
+
+  return <motion.span animate={controls}>{displayValue.toLocaleString()}</motion.span>;
+};
+
+
+
 import servicesData from "../services.json";
 import Link from "next/link";
 import Footer from "./components/Footer";
@@ -188,18 +279,9 @@ export default function Home() {
           <div className="max-w-7xl mx-auto text-center">
             <h3 className="text-3xl font-bold mb-12">Our Numbers. Proven Success.</h3>
             <div className="max-w-6xl mx-auto grid md:grid-cols-3 divide-x-1 divide-gray-200 gap-12 text-center">
-              <div>
-                <div className="text-5xl md:text-5xl font-bold mb-4">$50M+</div>
-                <p className="opacity-90 font-medium">Capital Growth</p>
-              </div>
-              <div>
-                <div className="text-5xl md:text-5xl font-bold mb-4">13 Yrs</div>
-                <p className="opacity-90 font-medium">Of Experience</p>
-              </div>
-              <div>
-                <div className="text-5xl md:text-5xl font-bold mb-4">120+</div>
-                <p className="opacity-90 font-medium">Startup Clients</p>
-              </div>
+              <CounterCard value={50} suffix="M+" label="Capital Growth" prefix="$" />
+              <CounterCard value={13} suffix=" Yrs" label="Of Experience" />
+              <CounterCard value={120} suffix="+" label="Startup Clients" />
             </div>
           </div>
         </section>
