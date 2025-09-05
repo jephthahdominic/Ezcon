@@ -14,7 +14,7 @@ export default function Footer(){
                 <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
                 <div className="space-y-1 text-sm">
                   <p>Africa: +233 244 098 784</p>
-                  <p>Europe: +31 XXXXXXX</p>
+                  <p>Europe: +316 849 102 74</p>
                   <p>info@ezconadvisory.com</p>
                 </div>
               </div>
@@ -22,7 +22,7 @@ export default function Footer(){
                 <h4 className="font-semibold text-lg mb-4">Location</h4>
                 <div className="space-y-1 text-sm">
                   <p>71 Kwame Nkrumah Avenue-Accra, Ghana</p>
-                  <p>243 Koepelplein Haarlem-Netherlands</p>
+                  <p>Koepelplein 243 2031 WL Haarlem, Netherlands</p>
                 </div>
               </div>
             </div>

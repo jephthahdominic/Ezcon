@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
+import {metadata as DefaultMetadata} from "@/lib/metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,10 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "eZcon Advisory Limited | Global Business Solutions & Strategic Consulting",
-  description: "eZcon Advisory Limited - A global business solutions provider with a worldwide network spanning multiple continents. Since 2012, we've been delivering innovative services including business intelligence, corporate investigations, and strategic consulting to international clients.",
-};
+export const metadata: Metadata = DefaultMetadata;
 
 export default function RootLayout({
   children,
