@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(request) { 
+export async function POST(request:any) { 
   try {
     // Parse the form data from the request
     const body = await request.json();
@@ -28,7 +28,7 @@ export async function POST(request) {
       to: ["stdominicjephthah63@gmail.com"], // Fixed: should be array, not object
       subject: `New message from ${fullName}`, 
       html: `${emailHtml}`,
-      reply_to: email,
+      replyTo: email,
     });
 
     if (error) { 
