@@ -2,10 +2,10 @@ import { EmailTemplate } from '../../components/EmailTemplate';
 import { Resend } from 'resend';
 import { render } from '@react-email/render';
 import { NextResponse } from 'next/server';
-
+import { NextRequest } from 'next/server';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(request:any) { 
+export async function POST(request:NextRequest) { 
   try {
     // Parse the form data from the request
     const body = await request.json();
