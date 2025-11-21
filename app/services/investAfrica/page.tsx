@@ -12,7 +12,7 @@ export default function InvestAfrica() {
       <main className="font-sans bg-white text-[#2c1c0f]">
         {/* Hero Section */}
         <section 
-          className="relative h-[70vh] bg-gradient-to-br from-[#0a2540] via-[#1e3a5f] to-[#2d5a87]  overflow-hidden bg-[url('/investAfricHero.png')] bg-cover bg-center"
+          className="relative h-[70vh] overflow-hidden bg-[url('/investAfricHero.png')] bg-cover bg-center"
         >
           {/* Background Elements */}
           <div className="absolute inset-0 bg-black/40"></div>

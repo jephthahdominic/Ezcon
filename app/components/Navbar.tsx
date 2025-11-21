@@ -6,11 +6,12 @@ const services = [
   { name: "i-Verify", href: "/services/i-verify" },
   { name: "Invest Africa", href: "/services/investAfrica" },
   { name: "Market Intelligence", href: "/services/marketintelligence" },
-  { name: "Tour Afric", href: "/services/tourAfric" },
-  { name: "WorknPay", href: "/services/worknpay" },
-  { name: "Fraud detection and protection", href: "/services/training" },
-  { name: "Cyber Security", href: "/services/cyberSecurity" },
-  { name: "Health Overseas", href: "/services/health-overseas" },
+  // { name: "Tour Afric", href: "/services/tourAfric" },
+  // { name: "WorknPay", href: "/services/worknpay" },
+  // { name: "Fraud detection and protection", href: "/services/training" },
+  { name: "Leadership Development", href: "/services/leadership-development" },
+  // { name: "Cyber Security", href: "/services/cyberSecurity" },
+  // { name: "Health Overseas", href: "/services/health-overseas" },
 ];
 
 export default function Navbar() {
@@ -19,7 +20,7 @@ export default function Navbar() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow-sm relative z-20">
+    <nav className="w-full bg-white shadow-sm relative z-20 sticky top-0">
       <div className="flex justify-between items-center px-6 py-5">
         {/* Logo */}
         <div className="flex items-center space-x-2">
