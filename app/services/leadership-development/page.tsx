@@ -18,21 +18,21 @@ export default function LeadershipDevelopment() {
     {
       number: "01",
       title: "Delivering Results with Modern Project Execution",
-      subtitle: "A 5-day practical masterclass in Agile project management",
+      subtitle: "A 5-day Intensive practical masterclass in Agile project management",
       description:
         "Participants learn how to deliver successful projects using Agile methods, Scrum, sprint planning, prioritization, stakeholder engagement and modern collaboration techniques that increase speed, quality and accountability.",
     },
     {
       number: "02",
       title: "Leading for Strategic Success",
-      subtitle: "A 5-day leadership masterclass on developing and executing winning leadership strategies",
+      subtitle: "A 5-day Intensive leadership masterclass on developing and executing winning leadership strategies",
       description:
         "This program focuses on the real capabilities leaders need to align teams, drive performance, communicate direction and lead people through change. Participants learn strategic leadership models, team effectiveness, decision-making, coaching and motivation.",
     },
     {
       number: "03",
       title: "Building a Winning Business Strategy",
-      subtitle: "A 5-day strategy masterclass focused on designing and delivering real business strategies",
+      subtitle: "A 5-day Intensive strategy masterclass focused on designing and delivering real business strategies",
       description:
         "Participants learn the full end-to-end process of building a business strategy, including market analysis, customer insights, opportunity identification, competitive positioning, strategic priorities, execution planning and resource alignment.",
     },
@@ -111,22 +111,18 @@ export default function LeadershipDevelopment() {
       <main className="font-sans bg-white text-[#2c1c0f]">
         {/* Hero Section */}
         <section className="bg-white">
-          <div className="mx-auto px-6 md:px-10 py-14 md:py-20">
+          <div className="mx-auto px-6 md:px-12 py-14 md:py-20">
             <div className="grid md:grid-cols-2 gap-10 items-center">
               {/* Left: Text */}
               <div className="space-y-5 animate-fade-in">
-                <span className="inline-block text-xs md:text-sm font-semibold tracking-wide text-orange-700 bg-orange-50 px-3 py-1 rounded-full">
-                  Leadership Development
-                </span>
-
                 <div className="space-y-3">
                   <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-                    Fuel your growth with bold leadership.
+                    Leadership Development
                   </h1>
-                  <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                  {/* <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                     Unlock stronger performance with practical 5-day masterclasses in strategy, project execution
                     and leading high-performing teams.
-                  </p>
+                  </p> */}
                 </div>
 
                 <p className="text-xs md:text-sm italic text-gray-500">
@@ -166,7 +162,7 @@ export default function LeadershipDevelopment() {
         </section>
 
         {/* Stats Section */}
-        <section className="bg-white py-12 px-6 md:px-8">
+        <section className="bg-white py-12 px-6 md:px-12">
           <div className="mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((stat, index) => (
               <div
@@ -185,18 +181,12 @@ export default function LeadershipDevelopment() {
 
         {/* Service Description */}
         <section id="programs" className="w-full mx-auto py-2 space-y-2">
-          <header className="space-y-4 py-12 px-6 md:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-              Leadership Development Masterclasses
-            </h2>
-            <p className="text-base text-gray-700 leading-relaxed">
-              Our leadership development offering brings together three intensive 5-day programs focused on modern project execution,
-              strategic leadership, and building a winning business strategy.
-            </p>
-          </header>
 
           {/* Programs */}
-          <div className="space-y-8 p-6 md:p-12 px-6 md:px-8">
+          <div className="space-y-8 p-6 md:p-12 px-6 md:px-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                Training Courses
+            </h2>
             {programs.map((program) => (
               <div key={program.number} className="space-y-2">
                 <h3 className="text-lg font-semibold text-gray-900">
@@ -213,7 +203,7 @@ export default function LeadershipDevelopment() {
           </div>
 
           {/* Outcomes & Methodology */}
-          <div className="grid md:grid-cols-2 gap-12 p-6 md:p-12 px-6 md:px-8">
+          <div className="grid md:grid-cols-2 gap-12 p-6 md:p-12 px-6 md:px-12">
             <div>
               <h3 className="text-lg font-semibold text-gray-900">
                 Core Outcomes (Across All Programs)
@@ -245,7 +235,7 @@ export default function LeadershipDevelopment() {
           </div>
 
           {/* Benefits */}
-          <div className="grid md:grid-cols-2 gap-12 p-6 md:p-12 px-6 md:px-8">
+          <div className="grid md:grid-cols-2 gap-12 p-6 md:p-12 px-6 md:px-12">
             <div>
               <h3 className="text-lg font-semibold text-gray-900">
                 Organizational Benefits
@@ -276,7 +266,7 @@ export default function LeadershipDevelopment() {
           </div>
 
           {/* About the Instructor */}
-          <div className="flex flex-col-reverse sm:flex-row-reverse gap-10 items-center mt-16 bg-[#eee] p-12 py-24">
+          <div className="flex flex-col-reverse sm:flex-row-reverse gap-10 items-center mt-16 bg-[#eee] p-6 md:p-12 py-24">
             <div className="space-y-3">
               <h3 className="text-lg font-semibold text-gray-900">
                 About the Instructor - Bela Sandor
@@ -291,11 +281,11 @@ export default function LeadershipDevelopment() {
                 in the Netherlands and delivers executive training programs through StartMonday.AI.
               </p>
             </div>
-            <div className="flex justify-center">
-              <div className="w-40 h-40 md:w-48 md:h-48 rounded-3xl bg-gray-100 shadow-md border border-gray-200 overflow-hidden flex items-center justify-center">
+            {/* <div className="flex justify-center">
+              <div className="w-[85vmin] h-[85vmin] md:w-[80vmin] md:h-[80vmin] rounded-3xl bg-gray-100 shadow-md border border-gray-200 overflow-hidden flex items-center justify-center">
                 <span className="text-xs text-gray-500">Instructor photo</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <section className="px-6 md:px-10 py-12">

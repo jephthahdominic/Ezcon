@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6 text-xs md:text-sm text-gray-800 items-center">
           <li>
-            <Link href="/about-us" className="hover:underline">About</Link>
+            <Link href="/about-us" className="hover:underline">About Us</Link>
           </li>
           <li>
             <Link href="/contact-us" className="hover:underline">Contact Us</Link>

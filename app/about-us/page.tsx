@@ -12,7 +12,7 @@ export default function AboutUs() {
         >
           <div className="absolute inset-0 bg-black/40"></div>
           <div className="relative z-10 text-white px-8 pb-12 max-w-2xl">
-            <h1 className="text-4xl md:text-5xl font-bold">About Ezcon</h1>
+            <h1 className="text-4xl md:text-5xl font-bold">Ezcon</h1>
           </div>
         </section>
 
